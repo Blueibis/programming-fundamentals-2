@@ -35,5 +35,14 @@ end
 puts ages.sort.reverse!
 fav_movies["Beauty and the Beast(1991)"] = 1991
 fav_movies["Beauty and the Beast(2017)"] = 2017
-puts fav_movies
+puts "After adding both Beauty and the Beast movies:\n#{fav_movies}"
 #Exercise 4
+ages_under_30 = ages.select { |age| age <= 30 }
+puts "The baby is the youngest. He's #{ages_under_30.sort[0]} yrs old.\nMy brother Jack is #{ages_under_30.sort[1]} and\nMy mother Bettie is #{ages_under_30.sort[2]}."
+puts "Frank is the oldest. He's #{ages.max} yrs old."
+puts "Number of times I flipped heads: #{coin_flip.count("heads")}"
+fav_artists.delete("Maroon 5")
+puts "On second though, liking Maroon 5 well enough just isn't enough.\nSo it's off my list >:D"
+some_cities["Bangkok"] = 8281000
+puts "Research(Google) indicates that I the population of Bangkok is actually #{some_cities["Bangkok"]}...oops"
+#Exercise 5
