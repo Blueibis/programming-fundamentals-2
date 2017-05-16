@@ -44,5 +44,15 @@ puts "Number of times I flipped heads: #{coin_flip.count("heads")}"
 fav_artists.delete("Maroon 5")
 puts "On second though, liking Maroon 5 well enough just isn't enough.\nSo it's off my list >:D"
 some_cities["Bangkok"] = 8281000
-puts "Research(Google) indicates that I the population of Bangkok is actually #{some_cities["Bangkok"]}...oops"
+puts "Research(Google) indicates that the population of Bangkok is actually #{some_cities["Bangkok"]}...oops"
 #Exercise 5
+population_total = some_cities.values.reduce(:+)
+puts "After corrections, the total population is #{population_total}."
+f_and_f.each do |name, age|
+  age <= 30 ? (puts "#{name} is young.") : (puts "#{name} is old.")
+end
+puts "My last two favourite colours would be " + fav_colours[-1] + " and " + fav_colours[-2]
+puts "So apparently we're all age #{ages.map {|age| age += 1}.join(", ")} now."
+fav_colours << "mud" << "teal"
+puts "I bought a mud and teal shirt today for reasons. I guess I have to add them to the list now.\n#{fav_colours.join(", ")}"
+#Exercise 6
