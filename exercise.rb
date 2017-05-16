@@ -28,3 +28,12 @@ puts "I like #{fav_artists[0]}'s music well enough."
 puts "Rest in peace #{fav_artists[1]}."
 puts "I think #{fav_artists[2]} has an amazing voice!"
 #Exercise 3
+puts fav_artists[0..1]
+fav_movies.each do |movie, date|
+  puts "#{movie} came out in #{date}."
+end
+puts ages.sort.reverse!
+fav_movies["Beauty and the Beast(1991)"] = 1991
+fav_movies["Beauty and the Beast(2017)"] = 2017
+puts fav_movies
+#Exercise 4
