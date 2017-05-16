@@ -67,4 +67,19 @@ countries = [
   {name: "Canada", continent: "North America", island: false},
   {name: "Greece", continent: "Europe", island: false}
 ]
+#Exercise 6.5
+puts "Let the spamming begin."
+20.times do puts "I will not skateboard in the halls"
+end
+times_20 = Array.new(20, "I will not skateboard in the halls")
+one_to_fifty = [*1..50]
+
+onefifty_sum = 0
+one_to_fifty.each {|n| onefifty_sum += n}
+puts onefifty_sum
+triple_onefifty = one_to_fifty.map {|n| [n, n, n]}
+puts triple_onefifty
+no_island = countries.select do |country|
+country[:island] == false
+end
 #Exercise 7
