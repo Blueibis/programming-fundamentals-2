@@ -56,3 +56,15 @@ puts "So apparently we're all age #{ages.map {|age| age += 1}.join(", ")} now."
 fav_colours << "mud" << "teal"
 puts "I bought a mud and teal shirt today for reasons. I guess I have to add them to the list now.\n#{fav_colours.join(", ")}"
 #Exercise 6
+list_movies = {
+  1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+phone_numbers = [[1, 2, 3],[4, 5, 6],[7, 8, 9],["*", 0, "#"]]
+countries = [
+  {name: "Japan", continent: "Asia", island: true},
+  {name: "Canada", continent: "North America", island: false},
+  {name: "Greece", continent: "Europe", island: false}
+]
+#Exercise 7
