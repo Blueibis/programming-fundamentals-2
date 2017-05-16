@@ -1,6 +1,6 @@
 fav_colours = ["blue", "white", "purple", "grey", "pink"]
 ages = [22, 16, 51, 55]
-coin_flip = [false, true, false, true, false]
+coin_flip = ["tails", "heads", "tails", "heads", "tails"]
 fav_artists = ["Maroon 5", "Christina Grimmie", "Ashley Barret"]
 fav_colours_sym = [:blue, :white, :purple, :grey, :pink]
 
@@ -12,3 +12,9 @@ definition = {
 fav_movies = {"Mass Appeal" => 1984, "Money Madness" => 1948, "The Incredibles" => 2004}
 some_cities = {"Bangkok" => 14565547, "Nairobi" => 3375000, "Tehran" => 8200000}
 f_and_f = {"Justin" => 22, "Jack" => 16, "Bettie" => 51, "Frank" => 55}
+
+puts coin_flip
+puts fav_colours[0]
+puts ages.sort
+ages << 0
+puts fav_movies["The Incredibles"]
