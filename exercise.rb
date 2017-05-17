@@ -52,7 +52,7 @@ f_and_f.each do |name, age|
   age <= 30 ? (puts "#{name} is young.") : (puts "#{name} is old.")
 end
 puts "My last two favourite colours would be " + fav_colours[-1] + " and " + fav_colours[-2]
-puts "So apparently we're all age #{ages.map {|age| age += 1}.join(", ")} now."
+puts "So apparently we're all age #{ages.map! {|age| age += 1}.join(", ")} now."
 fav_colours << "mud" << "teal"
 puts "I bought a mud and teal shirt today for reasons. I guess I have to add them to the list now.\n#{fav_colours.join(", ")}"
 #Exercise 6
@@ -77,9 +77,29 @@ one_to_fifty = [*1..50]
 onefifty_sum = 0
 one_to_fifty.each {|n| onefifty_sum += n}
 puts onefifty_sum
-triple_onefifty = one_to_fifty.map {|n| [n, n, n]}
-puts triple_onefifty
-no_island = countries.select do |country|
+triple_onefifty = []
+triple_onefifty << one_to_fifty.map {|n| [n, n, n]}
+print "#{triple_onefifty}\n"
+no_island = []
+no_island << countries.select do |country|
 country[:island] == false
 end
+puts no_island
 #Exercise 7
+colours_artists =  []
+colours_artists << fav_colours + fav_artists
+colours_artists.flatten!
+colours_artists.each { |mixitem| mixitem.to_s.capitalize! }
+print "#{colours_artists.sort}\n"
+ages.each do |age|
+  puts "I <3 #{fav_artists[0]} #{age}."
+end
+ages.each do |age|
+  puts "I <3 #{fav_artists[1]} #{age}."
+end
+puts "Maybe I'm not cut out for coding if another year has already passed.\nNow we're all age #{ages.map { |age| age += 1}.join(", ")}."
+ages_sum = ages.reduce(:+)
+puts "The sum of all my listed ages is #{ages_sum}."
+only_heads = []
+only_heads << coin_flip.select { |flip| flip == "heads" }
+print "#{only_heads}\n"
